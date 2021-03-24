@@ -16,7 +16,7 @@ function toDataURL(src, callback) {
 var img = document.getElementById("img")
 var src = "img.jpeg"
 toDataURL(
-  `${window.location.origin}/${src}`,
+  `${window.location.origin}/IPREPAssesment/${src}`,
   function (dataUrl) {
     img.src = dataUrl;
   }
