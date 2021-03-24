@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        p{
+          font-size: 24px;
+          color: #52565A;
+          line-height: 1.1;  
+          margin-top: 1rem;
+        }
+        li{
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+        .mathbox{
+            font-size: 24px;
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-left: 3rem
+
+        }
+        img{
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 80%;margin: auto; margin-top: 100px;">
+        <h2 style="">DIFFERENTIATION</h2>
+        <p style=""><b>Differentiation​</b> is the action of computing a derivative. Thederivative of a function y = f(x) of a variable x is a
+            measureof the rate at which the value y of the function changes withrespect to the change of the variable x. It is
+            called thederivative of y with respect to x.</p>
+        <p style="">Representation : derivative of y with respect to
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>x</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>dy</mi>
+                    <mi>dx</mi>
+                </mfrac>
+            </math> 
+        </p> 
+        <img id="img" src="" alt="">
+        <!--  -->
+        <h2 style="margin-top: 1rem;">Important Formulae</h2>
+        <div style="margin-left: 3rem;margin-top: 1rem;">
+            <ul style="font-size: 24px;">
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d(<msup>
+                                <mi>x</mi>
+                                <mi>n</mi>
+                            </msup>)</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac> 
+                        <mo>=</mo>
+                        <mi>n<msup>
+                            <mi>x</mi>
+                            <mi>n-1</mi>
+                        </msup></mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac> 
+                        <mfenced open="(" close=")">
+                            <msup>
+                                <mi>e</mi>
+                                <mi>x</mi>
+                            </msup>
+                        </mfenced>
+                        <mo>=</mo>
+                        <msup>
+                            <mi>e</mi>
+                            <mi>x</mi>
+                        </msup>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <msqrt>
+                                <mi>x</mi>
+                            </msqrt>
+                        </mfenced>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>1</mi>
+                            <mi>2<msqrt><mi>x</mi></msqrt></mi>
+                        </mfrac>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d<mi>k</mi></mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                    </math>
+                    ; where k is constant
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d<mfenced open="(" close=")"><mi>x</mi></mfenced></mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d<mfenced open="(" close=")">
+                                <mi>k<mi>x</mi></mi>
+                            </mfenced></mi>
+                            <mi>d <mi>x</mi></mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>k<mi>d</mi><mfenced open="(" close=")"><mi>x</mi></mfenced></mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mi>k</mi>
+                    </math>
+                    ; where k is constant
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>sin <mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <mi>cos <mi>x</mi></mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>cos<mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <mi>sin <mfenced open="(" close=")"><mi>x</mi></mfenced></mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>tan<mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <msup>
+                            <mi>sec</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mi>x</mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>cot<mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <msup>
+                            <mi>cosec</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mi>x</mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>sec<mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <mi>sec</mi>
+                        <mi>x</mi>
+                        <mi>tan</mi>
+                        <mi>x</mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>cosec<mi>x</mi></mi>
+                            
+                        </mfenced>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <mi>cosec</mi>
+                        <mi>x</mi>
+                        <mi>cot</mi>
+                        <mi>x</mi>
+                    </math>
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mfrac>
+                            <mi>d</mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mfenced open="(" close=")">
+                            <mi>ln x</mi>
+                        </mfenced>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mi>1</mi>
+                            <mi>x</mi>
+                        </mfrac>
+                    </math>
+                </li>
+            </ul>
+        </div>
+        <h2 style="margin-top: 1rem;">COMMON RULES</h2>
+
+        <p style="">Derivative of constant</p>
+        <p style="">Derivative of a constant (or constant function) is always zero</p>
+        <div class="mathbox" >
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>dx</mi>
+                </mfrac>
+                <mfenced open="(" close=")"><mi>k</mi></mfenced>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>
+        </div>
+        <p style="">Derivative of sum</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <mi>f<mo>+</mo><mi>g</mi></mi>
+                </mfenced>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>d<mi>f</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>+</mo>
+                <mfrac>
+                    <mi>d<mi>g</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+
+            </math>
+        </div>
+        <p style="">Derivative of difference</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <mi>f<mo>-</mo><mi>g</mi></mi>
+                </mfenced>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>d<mi>f</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>-</mo>
+                <mfrac>
+                    <mi>d<mi>g</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+
+            </math>
+        </div>
+        <p style="">Product Rule</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <mi>f<mi>g</mi></mi>
+                </mfenced>
+                <mo>=</mo>
+                <mi>g</mi>
+                <mfrac>
+                    <mi>d<mi>f</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>+</mo>
+                <mi>f</mi>
+                <mfrac>
+                    <mi>d<mi>g</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+            </math>
+        </div>
+        <p style="">Quotient Rule</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <mfrac>
+                        <mi>f</mi>
+                        <mi>g</mi>
+                    </mfrac>
+                </mfenced>
+                <mo>=</mo>
+               <mfrac>
+                    <mi>g
+                       <mfrac>
+                           <mi>d<mi>f</mi></mi>
+                           <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                        <mo>-</mo>
+                        <mi>f</mi>
+                        <mfrac>
+                            <mi>d<mi>g</mi></mi>
+                            <mi>d<mi>x</mi></mi>
+                        </mfrac>
+                    </mi>
+                    <msup>
+                        <mi>g</mi>
+                        <mn>2</mn>
+                    </msup>
+               </mfrac>
+            </math>
+        </div>
+        <h2 style="margin-top: 1rem;">Chain Rule for Differentiation</h2>
+        <!-- equation -->
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>dx</mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <msup>
+                        <mfenced open="(" close=")">
+                            <mi>f<mfenced open="(" close=")">
+                                <mi>x</mi>
+                            </mfenced></mi>
+                        </mfenced>
+                        <mi>n</mi>
+                    </msup>
+                </mfenced>
+                <mo>=</mo>
+                <mi>n</mi>
+                <mfenced open="(" close=")">
+                    <msup>
+                        <mfenced open="(" close=")">
+                            <mi>f<mfenced open="(" close=")">
+                                <mi>x</mi>
+                            </mfenced></mi>
+                        </mfenced>
+                        <mi>n-1</mi>
+                    </msup>
+                </mfenced>
+                <mo>.</mo>
+                <msup>
+                    <mi>f</mi>
+                    <mo>'</mo>
+                </msup>
+                <mfenced open="(" close=")">
+                    <mi>x</mi>
+                </mfenced>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>dx</mi>
+                </mfrac>
+                <mfenced open="[" close="]">
+                    <mfenced open="(" close=")">
+                        <mi>f<mfenced open="(" close=")">
+                            <mi>g<mfenced open="(" close=")">
+                            <mi>x</mi>
+                        </mfenced></mi>
+                        </mfenced></mi>
+                    </mfenced>
+                </mfenced>
+                <mo>=</mo>
+                <msup>
+                    <mi>f</mi>
+                    <mo>'</mo>
+                </msup>
+                <mfenced open="(" close=")">
+                    <mi>g<mfenced open="(" close=")">
+                        <mi>x</mi>
+                    </mfenced></mi>
+                </mfenced>
+                <mo>.</mo>
+                <msup>
+                    <mi>g</mi>
+                    <mi>'</mi>
+                </msup>
+                <mfenced open="(" close=")">
+                    <mi>x</mi>
+                </mfenced>
+            </math>
+        </div>
+        <p style="color: #000;font-size: 24px;">Example:If 
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mo>=</mo>
+                <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+            </math> 
+            ,then find the value of 
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>+</mo>
+                <mi>x</mi>
+            </math>
+        </p>
+        <p style="color: #000;font-size: 24px;">Solution:</p>
+        <p>Given,</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mo>=</mo>
+                <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+            </math>
+        </div>
+        <p>Differentiating both the sides with respect to x</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <mi>y</mi>
+                </mfenced>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>d</mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+                </mfenced>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <mi>y</mi>
+                </mfenced>
+                <mo>=</mo>
+                <mfrac>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                </mfrac>
+                <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+                <mo>x</mo>
+                <mfenced open="(" close=")">
+                    <mo>-<mn>2</mn><mi>x</mi></mo>
+                </mfenced>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <mi>y</mi>
+                </mfenced>
+                <mo>=</mo>
+                <mfrac>
+                    <mo>-<mi>x</mi></mo>
+                    <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+                </mfrac>
+            </math>
+        </div>
+        <p>Multiplying both the sides by y,</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <mi>y</mi>
+                </mfenced>
+                <mo>=</mo>
+                <mi>y</mi>
+                <mo>x</mo>
+                <mfrac>
+                    <mo>-<mi>x</mi></mo>
+                    <msqrt>
+                        <msup>
+                            <mn>16</mn>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>-</mo>
+                        <msup>
+                            <mi>x</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </msqrt>
+                </mfrac>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mfenced open="(" close=")">
+                    <mi>y</mi>
+                </mfenced>
+                <mo>=</mo>
+                <msqrt>
+                    <msup>
+                        <mn>16</mn>
+                        <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <msup>
+                        <mi>x</mi>
+                        <mn>2 </mn>
+                    </msup>
+                    <mfenced open="(" close=")">
+                            <mfrac>
+                                <mo>-<mi>x</mi></mo>
+                                <msqrt>
+                                    <msup>
+                                        <mn>16</mn>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>-</mo>
+                                    <msup>
+                                        <mi>x</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                </msqrt>
+                            </mfrac>
+                        </mfenced>
+                </msqrt>
+                
+                <mfenced open="[" close="]">
+                      <mo> ∵ &nbsp <mi>y</mi>&nbsp<mo>=</mo>
+                        <msqrt>
+                            <msup>
+                                <mn>16</mn>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>-</mo>
+                            <msup>
+                                <mi>x</mi>
+                                <mn>2 &nbsp</mn>
+                            </msup>
+                            
+                        </msqrt>
+                    </mo>
+                </mfenced>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>=</mo>
+                <mo>-</mo>
+                <mi>x</mi>
+            </math>
+        </div>
+        <p>Adding x both the sides we get,</p>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>+</mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>-</mo>
+                <mi>x</mi>
+                <mo>+</mo>
+                <mi>x</mi>
+            </math>
+        </div>
+        <div class="mathbox">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>y</mi>
+                <mfrac>
+                    <mi>d<mi>y</mi></mi>
+                    <mi>d<mi>x</mi></mi>
+                </mfrac>
+                <mo>+</mo>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mo>-</mo>
+                <mn>0</mn>
+            </math>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
